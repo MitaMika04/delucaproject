@@ -1,0 +1,115 @@
+.foods{
+    background-color:#FABC3F;
+
+}
+.foods .heading{
+    
+    width:18%;
+    height: 4rem;
+    background-color: #333;
+    color:#fff;
+    
+}
+.foods .heading span{
+    color:#FABC3F;
+}
+
+
+.foods .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+
+.foods .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, 1);
+    position: relative;
+    background-color: #fff;
+
+}
+
+.foods .box-container .box .discount{
+    position: absolute;
+    top:1rem; left:1rem;
+    padding: .7rem 1rem;
+    font-size: 2rem;
+    color:#821131;
+    background:rgba(225,51,153,.05);
+    z-index: 1;
+    border-radius: .5rem;
+
+}
+
+.foods .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.foods .box-container .box .image img{
+    height: 25rem;
+}
+.foods .box-container .box:hover .image img{
+    transition: .3s ease-in-out;
+    transition-delay: 0.2s;
+}
+
+.foods .box-container .box .image .icons{
+    position:absolute;
+    bottom: 0; left: 0; right: 0;
+    display: flex;
+}
+.foods .box-container .box:hover .image .icons{
+    bottom: 0;
+    
+
+}
+
+.foods .box-container .box .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background:#C7253E;
+    color: #fff;
+}
+.foods .box-container .box .image .icons .cart-btn{
+    border-left:#fff7;
+    border-right: #fff7;
+    width: 100%;
+    text-decoration: none;
+    
+}
+.foods .box-container .box .image .icons a:hover{
+    background-color: #821131;
+    transition: .3s ease-in-out;
+    transition-delay: 0.2s;
+    transform: scale(1.1);
+}
+
+.foods .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+.foods .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+.foods .box-container .box .content .price{
+    font-size: 2.5rem;
+    color: #C7253E;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.foods .box-container .box .content .price span{
+    font-size: 1.5rem;
+    color: #FABC3F;
+    font-weight: lighter;
+    text-decoration: line-through;
+}

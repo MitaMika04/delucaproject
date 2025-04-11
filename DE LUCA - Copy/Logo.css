@@ -1,0 +1,13 @@
+.img-logo{
+    width: 3%;
+    height: 3%;
+    border-radius: 60%;
+    
+    
+}
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
